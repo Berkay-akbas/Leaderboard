@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.item:nth-child(even) {
+  background-color: rgb(199, 199, 199);
+}
+
+.title h1 {
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem 9rem;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-input * {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.recent {
+  display: flex;
+}
+
+.recent h2 {
+  font-size: 2rem;
+}
+
+footer {
+  background-color: rgb(199, 199, 199);
+  border: 2px black solid;
+}
+
+.user-input h2 {
+  font-size: 2rem;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.score-list {
+  list-style: none;
+  border: 2px black solid;
+  margin-top: 1.5rem;
+}
+
+.score-list li {
+  padding: 0.3rem;
+}
+
+.refresh {
+  margin-left: 1rem;
+  border: 2px black solid;
+  background-color: white;
+  width: 5rem;
+}
+
+.user-submit {
+  width: 5rem;
+  border: 2px black solid;
+  background-color: white;
+  margin-left: auto;
+}
+
+.user-input input {
+  border: 2px black solid;
+}
+
+input::placeholder {
+  font-size: 1rem;
+  color: black;
+}
