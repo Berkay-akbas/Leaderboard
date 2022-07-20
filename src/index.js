@@ -30,10 +30,10 @@ const show = () => {
       scoreHolder.appendChild(newScore);
     }
   });
-}
+};
 
 refresh.addEventListener('click', show);
 
 window.onload = () => {
   show();
-}
+};
