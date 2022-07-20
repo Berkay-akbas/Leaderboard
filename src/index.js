@@ -1,6 +1,6 @@
 import './style.css';
-import Score from './script.js';
-import { asyncGetCall, asyncPostCall } from './apicalls.js';
+import Score from './modules/script.js';
+import { asyncGetCall, asyncPostCall } from './modules/apicalls.js';
 
 const submit = document.querySelector('.user-submit');
 const refresh = document.querySelector('.refresh');
@@ -19,7 +19,7 @@ submit.addEventListener('click', () => {
   scoreInput.value = '';
 });
 
-refresh.addEventListener('click', () => {
+const show = () => {
   scoreHolder.innerHTML = '';
   const scores = asyncGetCall();
   scores.then((value) => {
@@ -30,4 +30,10 @@ refresh.addEventListener('click', () => {
       scoreHolder.appendChild(newScore);
     }
   });
-});
+}
+
+refresh.addEventListener('click', show);
+
+window.onload = () => {
+  show();
+}
