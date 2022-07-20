@@ -5,7 +5,7 @@ const submit = document.querySelector('.user-submit');
 const refresh = document.querySelector('.refresh');
 
 const nameInput = document.querySelector('.user-name');
-const scoreInput = document.getElementById('a');
+const scoreInput = document.querySelector('.user-score');
 
 const scoreHolder = document.querySelector('.score-list');
 
