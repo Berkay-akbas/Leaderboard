@@ -13,6 +13,7 @@
 .title h1 {
   font-size: 3rem;
   padding: 2rem;
+  text-align: center;
 }
 
 .main {
@@ -20,6 +21,8 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 2rem 9rem;
+  max-width: 75rem;
+  margin: auto;
 }
 
 .user-input {
