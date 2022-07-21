@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&display=swap");
 *,
 *::after,
 *::before {
@@ -6,14 +7,41 @@
   padding: 0;
 }
 
+body {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #cc461d, #74c726, #0a6383, #421475);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .item:nth-child(even) {
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(221, 98, 98);
+}
+
+.item:nth-child(odd) {
+  background-color: rgb(212, 168, 118);
 }
 
 .title h1 {
   font-size: 3rem;
   padding: 2rem;
   text-align: center;
+  color: azure;
+  -webkit-text-stroke: 1px red;
 }
 
 .main {
@@ -22,6 +50,7 @@
   justify-content: space-around;
   padding: 2rem 9rem;
   max-width: 75rem;
+  min-width: none;
   margin: auto;
 }
 
@@ -41,41 +70,71 @@
 
 .recent h2 {
   font-size: 2rem;
+  color: azure;
+  -webkit-text-stroke: 1px red;
 }
 
 footer {
-  background-color: rgb(199, 199, 199);
-  border: 2px black solid;
+  background-color: yellow;
+  padding: 0.5rem;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+}
+
+.fab {
+  color: black;
+  padding-left: 1rem;
+}
+
+.fab:hover {
+  transition: all 1s ease-in;
+  transform: rotate(360deg);
 }
 
 .user-input h2 {
   font-size: 2rem;
   padding-top: 0;
   margin-top: 0;
+  color: azure;
+  -webkit-text-stroke: 1px red;
 }
 
 .score-list {
   list-style: none;
   border: 2px black solid;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .score-list li {
   padding: 0.3rem;
+  color: rgb(43, 39, 39);
 }
 
 .refresh {
   margin-left: 1rem;
   border: 2px black solid;
-  background-color: white;
+  background-color: blue;
   width: 5rem;
+  border-radius: 15px;
+  box-shadow: 0 3px black;
+  cursor: pointer;
+  color: white;
 }
 
 .user-submit {
   width: 5rem;
   border: 2px black solid;
-  background-color: white;
+  background-color: blueviolet;
   margin-left: auto;
+  border-radius: 15px;
+  box-shadow: 0 3px black;
+  cursor: pointer;
+  color: white;
 }
 
 .user-input input {
@@ -85,4 +144,25 @@ footer {
 input::placeholder {
   font-size: 1rem;
   color: black;
+}
+
+.user-submit:hover {
+  background-color: yellow;
+  color: black;
+}
+.refresh:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.user-submit:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+}
+
+.refresh:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #black;
+  transform: translateY(4px);
 }
