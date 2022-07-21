@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&display=swap");
+
 *,
 *::after,
 *::before {
@@ -20,20 +21,22 @@ body {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
 
 .item:nth-child(even) {
-  background-color: rgb(221, 98, 98);
+  background-color: rgb(79, 154, 173);
 }
 
 .item:nth-child(odd) {
-  background-color: rgb(212, 168, 118);
+  background-color: rgb(50, 98, 121);
 }
 
 .title h1 {
@@ -50,7 +53,6 @@ body {
   justify-content: space-around;
   padding: 2rem 9rem;
   max-width: 75rem;
-  min-width: none;
   margin: auto;
 }
 
@@ -112,7 +114,8 @@ footer {
 
 .score-list li {
   padding: 0.3rem;
-  color: rgb(43, 39, 39);
+  color: rgb(73, 245, 242);
+  -webkit-text-stroke: 1px red;
 }
 
 .refresh {
@@ -150,6 +153,7 @@ input::placeholder {
   background-color: yellow;
   color: black;
 }
+
 .refresh:hover {
   background-color: yellow;
   color: black;
@@ -163,6 +167,6 @@ input::placeholder {
 
 .refresh:active {
   background-color: #3e8e41;
-  box-shadow: 0 5px #black;
+  box-shadow: 0 5px black;
   transform: translateY(4px);
 }
