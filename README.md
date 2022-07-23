@@ -10,8 +10,7 @@
 
 ## Live Demo
 
-For the live demo click the link.
-[Live Demo](https://berkay-akbas.github.io/Leaderboard/)
+For the live demo click [here](https://berkay-akbas.github.io/Leaderboard/)
 
 ## Authors
 
