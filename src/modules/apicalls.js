@@ -1,4 +1,4 @@
-export const asyncPostCall = async (a, b) => {
+export const asyncPostCall = async (userName, userScore) => {
   try {
     const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/T4vDJJBOqBSz7SE2Xntv/scores/', {
       method: 'POST',
@@ -6,8 +6,8 @@ export const asyncPostCall = async (a, b) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        user: a,
-        score: b,
+        user: userName,
+        score: userScore,
       }),
     });
     const data = await response.json();
